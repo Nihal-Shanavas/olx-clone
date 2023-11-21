@@ -1,0 +1,92 @@
+/* View.css */
+
+.viewParentDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.imageShowDiv img {
+  max-width: 100%;
+  margin-top: 70px;
+  height: auto;
+  border-radius: 8px; /* Add a border-radius for a rounded appearance */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for better visual appeal */
+}
+
+.rightSection {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px; /* Add margin for better spacing */
+}
+
+.productDetails {
+  background-color: #6d6c6c;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.contactDetails {
+  background-color: #7a7979;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.buyButtonStyled {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buyButtonStyled:hover {
+  background-color: #45a049;
+}
+
+.buySuccessModal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.buySuccessModal h2 {
+  color: #4caf50;
+}
+
+.buySuccessModal button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.buySuccessModal button:hover {
+  background-color: #45a049;
+}
+
+/* Media query for screens with a maximum width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .viewParentDiv {
+    padding: 10px;
+  }
+
+  .rightSection {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .imageShowDiv img {
+    max-width: 80%; /* Adjust the image size for larger screens */
+  }
+}
